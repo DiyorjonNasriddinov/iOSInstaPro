@@ -22,6 +22,9 @@
 		DE224C1829D34E40000F172C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE224C1729D34E40000F172C /* BaseViewController.swift */; };
 		DE224C1C29D36CE5000F172C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE224C1A29D36CE5000F172C /* HomePageViewController.swift */; };
 		DE224C1D29D36CE5000F172C /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE224C1B29D36CE5000F172C /* HomePageViewController.xib */; };
+		DE224C2029D5AA1A000F172C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE224C1F29D5AA1A000F172C /* Post.swift */; };
+		DE224C2529D5AD26000F172C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE224C2329D5AD26000F172C /* TableViewCell.swift */; };
+		DE224C2629D5AD26000F172C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE224C2429D5AD26000F172C /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		DE224C1729D34E40000F172C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DE224C1A29D36CE5000F172C /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		DE224C1B29D36CE5000F172C /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		DE224C1F29D5AA1A000F172C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DE224C2329D5AD26000F172C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DE224C2429D5AD26000F172C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 		DE224BD929D2F796000F172C /* InstagramLoginPage */ = {
 			isa = PBXGroup;
 			children = (
+				DE224C2129D5AD06000F172C /* cell */,
+				DE224C1E29D5AA07000F172C /* models */,
 				DE224C0C29D2F7C3000F172C /* apputils */,
 				DE224C0A29D2F7A4000F172C /* controllers */,
 				DE224BDA29D2F796000F172C /* AppDelegate.swift */,
@@ -183,6 +191,31 @@
 				DE224C1B29D36CE5000F172C /* HomePageViewController.xib */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		DE224C1E29D5AA07000F172C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DE224C1F29D5AA1A000F172C /* Post.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		DE224C2129D5AD06000F172C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE224C2229D5AD0B000F172C /* TimelineCell */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		DE224C2229D5AD0B000F172C /* TimelineCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE224C2329D5AD26000F172C /* TableViewCell.swift */,
+				DE224C2429D5AD26000F172C /* TableViewCell.xib */,
+			);
+			path = TimelineCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +324,7 @@
 			files = (
 				DE224C1629D33ACA000F172C /* SignUpViewController.xib in Resources */,
 				DE224BE729D2F797000F172C /* LaunchScreen.storyboard in Resources */,
+				DE224C2629D5AD26000F172C /* TableViewCell.xib in Resources */,
 				DE224C1129D2F890000F172C /* LoginPageViewController.xib in Resources */,
 				DE224BE429D2F797000F172C /* Assets.xcassets in Resources */,
 				DE224C1D29D36CE5000F172C /* HomePageViewController.xib in Resources */,
@@ -320,10 +354,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE224C1829D34E40000F172C /* BaseViewController.swift in Sources */,
+				DE224C2529D5AD26000F172C /* TableViewCell.swift in Sources */,
 				DE224C1029D2F890000F172C /* LoginPageViewController.swift in Sources */,
 				DE224C1C29D36CE5000F172C /* HomePageViewController.swift in Sources */,
 				DE224BDB29D2F796000F172C /* AppDelegate.swift in Sources */,
 				DE224C1529D33ACA000F172C /* SignUpViewController.swift in Sources */,
+				DE224C2029D5AA1A000F172C /* Post.swift in Sources */,
 				DE224BDD29D2F796000F172C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

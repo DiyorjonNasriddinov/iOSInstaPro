@@ -64,12 +64,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func callHomePage(){
         let vc: HomePageViewController = HomePageViewController(nibName: "HomePageViewController", bundle: nil)
+        let nc: UINavigationController = UINavigationController(rootViewController: vc)
         
         if self.window == nil {
             self.window = UIWindow(frame: UIScreen.main.bounds)
         }
         
-        self.window?.rootViewController = vc
+        self.window?.rootViewController = nc
         self.window?.makeKeyAndVisible()
     }
     
